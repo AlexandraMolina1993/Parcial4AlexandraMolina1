@@ -12,50 +12,89 @@ ul{
     padding: 10px;
 }
 h1{
-    background-image: url(./imagenes/istockphoto-512278456-1024x1024hospital2.jpg);
+    background-image: url(./imagenes/portada.avif);
     background-size:cover;
     background-position: 50%;
     background-attachment: fixed;
     padding: 20px 20px;
     height: 600px;
+    border-radius: 100px;
     text-align: center;
-    font-size: 4rex;
+    font-size: 2cm;
     text-transform: uppercase grey;
     text-shadow: 1px 2px rgb(21, 113, 150);
     margin-top: 5px;
+    
+}
+.principal{
+    padding: 1em;
+    overflow: hidden;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+
 }
 .tarjeta{
     max-width: 300px;
-    margin: 50px auto;
-    border: 2px solid lightblue;
-    box-shadow: 5px 5px 5px green,
-    -5px 5px 5px greenyellow;
-    border-bottom: 50%;
-           
+    margin: auto;
+    border: 1px solid lightblue;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgb(21, 150, 110),
+    -5px 5px 5px rgb(21, 150, 110);
+    display: flex;
+    float: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+    align-items: normal;
+    justify-content: center;
+    align-content: normal;
+    background-color: lightskyblue;
 }
+
 
 .img_tarjeta{
-    width: 30%;
-
-}
-.texto_resaltado{
-    background-color: brown;
+    max-width: 250px;
 }
 *{
     box-sizing: border-box;
     margin: 0,5%;
     padding: 0,5%;
     font-family: 'raleway',Verdana, Geneva, Tahoma, sans-serif;
-
+}
+.Iconos{
+display: flex;
+justify-content: left;
+gap: 30px;
 
 }
+.Iconos a{
+    font-size: 30px;
 
-
-.principal{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 40px;
-    width: 100%;
-    justify-content: center;
+}
+.Whatsapp{
+    color: darkgreen;
+}
+.Instagram{
+    color: red;
+}
+.TelefonoFijo{
+    color: black;
+}
+.Iconos a:hover{
+    transform: scale(1.8);
+}
+.boton-tarjeta{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #48385c;
+    color: whitesmoke;
+    border-radius: 10px;
+    font-weight: 400;
+    
+}
+.alto{
+    height: 550px;
 }
